@@ -10,7 +10,7 @@ using System.Text;
 public class GetOpenAI : MonoBehaviour
 {
     //API key
-	[SerializeField]private string m_OpenAI_Key="你的key";
+	[SerializeField]private string m_OpenAI_Key="sk-b11f5b8f95b34c488108b000d9f63257";
 	// 定义Chat API的URL
 	private string m_ApiUrl = "https://api.deepseek.com/chat/completions";
 	List<Dictionary<string,string>> messages = new List<Dictionary<string,string>>();
@@ -107,10 +107,10 @@ public class GetOpenAI : MonoBehaviour
 		// 		// presence_penalty=m_PostDataSetting.presence_penalty,
 		// 		// stop=m_PostDataSetting.stop
 		// 	};
-		var requestData = new PostData()
+		var requestData = new
 		{
 			model = "deepseek-chat",
-			prompt = messages,
+			messages = messages,
 			stream = false
 		};
 		UnityWebRequest request=new UnityWebRequest(m_ApiUrl,"POST");

@@ -3093,10 +3093,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6e8aefd6bca3c4ea9600a211d0949a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_OpenAI_Key: sk-195fb14227474c3183a972ba9710be31
+  m_OpenAI_Key: sk-b11f5b8f95b34c488108b000d9f63257
   m_PostDataSetting:
     model: deepseek-chat
-    prompt: 
     stream: 0
   m_InputWord: {fileID: 1555093990}
   m_rootTrans: {fileID: 1878336464}
